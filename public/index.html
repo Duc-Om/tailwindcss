@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://hairmart.vn/wp-content/uploads/2020/03/computer-icons-web-browser-red-lines.jpg"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Template1</title>
+  </head>
+  <body>
+    <!-- container max-w-[1920px] max-h-[13882px] -->
+    <div class="root">
+      <div class="content-warraper max-w-[1920px] mx-auto text-base">
+
+        <header class="py-[20px] mx-[16px] h-[81px] bg-[#FFFFFF]">
+
+          <nav class="flex flex-row justify-between items-center">
+
+            <div class="logo basis-1/6 ml-[34px]">
+              <a href="#"><img src="./image/logo.png" alt="" srcset="" /></a>
+            </div>
+
+            <ul
+              id="btn-menu-top" class="basis-5/6 hidden lg:flex lg:items-center lg:justify-center lg:gap-[32px] lg:text-base lg:font-bold"
+            >
+              <li class="">
+                <a href="#" class="top-menu-item">Giới thiệu</a>
+              </li>
+              <li class="">
+                <a href="#" class="top-menu-item">Đối tượng khách hàng</a>
+              </li>
+              <li class="cursor-pointer py-1">
+                <a href="#" class="top-menu-item">Quy trình</a>
+              </li>
+              <li class="cursor-pointer py-1">
+                <a href="#" class="top-menu-item">Bảng giá</a>
+              </li>
+              <li class="cursor-pointer py-1">
+                <a href="#" class="top-menu-item">Cảm nhận của khách hàng</a>
+              </li>
+              <li class="cursor-pointer py-1">
+                <a href="#" class="top-menu-item">Đội ngũ bác sĩ</a>
+              </li>
+              <li class="cursor-pointer py-1">
+                <a href="#" class="top-menu-item">Hình ảnh & Video</a>
+              </li>
+              <li>
+                <a href="tel:+19001806">
+                  <div
+                    class="relative w-[161px] h-[40px] bg-orange-500 rounded-[20px]"
+                  >
+                    <div
+                      class="absolute w-[28px] h-[28px] bg-white rounded-full top-[6px] left-[6px] bottom-[6px]"
+                    >
+                      <i
+                        class="fa fa-phone absolute text-[16px] top-[6px] left-[6px] text-orange-500"
+                      ></i>
+                    </div>
+                    <div
+                      class="py-[8px] pr-[12px] pl-[38px] text-yellow-50 h-[19px]"
+                    >
+                      Gọi 1900 1806
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul> <!-- End header-menu -->
+            <!-- responsive menu -->
+
+            <div class="basis-1 lg:hidden flex items-center cursor-pointer">
+              <svg id="toggel-icon-menu-top" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" onclick="mobileMenu()"/>
+              </svg>
+            </div>
+          </nav>
+        </header>
+        <!-- End header  -->
+        <!-- <main>main</main> -->
+        <!-- End main  -->
+        <!-- <footer>footer</footer>End foorter  -->
+      </div>
+      <!-- End content-wrapper  -->
+    </div>
+    <!-- End root  -->
+    <script src="./main.js"></script>
+  </body>
+</html>
