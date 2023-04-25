@@ -26,21 +26,22 @@
     <title>Template1</title>
   </head>
   <body>
-    <div class="root">
-      <div class="content-warraper max-w-[1920px] mx-auto text-base">
+    <div class="root bg-[#F5F5F5]">
+      <div class="content-warraper max-w-[1920px] w-[1920px] mx-auto text-base">
         <header class="p-[20px] mx-auto h-[81px] bg-[#FFFFFF]">
           <nav class="flex flex-row justify-between items-center relative">
             <!-- logo -->
-            <div class="logo basis-1/9 ml-[34px] mr-[30px]">
+            <div class="logo basis-2/12 ml-[236px]">
               <a href="#"><img src="./image/logo.png" alt="" srcset="" /></a>
             </div>
             <!-- menu -->
             <ul
-              id="btn-menu-top" class="basis-5/9 hidden lg:flex lg:items-center lg:justify-center lg:gap-[32px] lg:text-base lg:font-bold"
+              id="btn-menu-top"
+              class="basis-9/12 hidden ml-[-8px] lg:flex lg:items-center lg:justify-center lg:gap-[32px] lg:text-base lg:font-bold"
             >
               <li class="">
                 <!-- top-menu-item-active -->
-                <a href="#" class="top-menu-item ">Giới thiệu</a>
+                <a href="#" class="top-menu-item">Giới thiệu</a>
               </li>
               <li class="">
                 <a href="#" class="top-menu-item">Đối tượng khách hàng</a>
@@ -60,16 +61,28 @@
               <li class="cursor-pointer py-1">
                 <a href="#" class="top-menu-item">Hình ảnh & Video</a>
               </li>
-            </ul> <!-- End menu -->
+            </ul>
+            <!-- End menu -->
             <!-- responsive menu mobile-->
             <div class="basis-1 lg:hidden flex items-center cursor-pointer">
-              <svg id="toggel-icon-menu-top" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
-              stroke="currentColor" class="w-6 h-6 absolute left-[250px]">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              <svg
+                id="toggel-icon-menu-top"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 absolute left-[250px]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
               </svg>
             </div>
             <!-- buttom phone call -->
-            <ul class="basis-1/9 ml-[-35px]">
+            <ul class="basis-1/12 mr-[236px]">
               <li>
                 <a href="tel:+19001806">
                   <div
@@ -90,20 +103,63 @@
                   </div>
                 </a>
               </li>
-            </ul><!-- End phone call  -->
+            </ul>
+            <!-- End phone call  -->
           </nav>
-        </header><!-- End header  -->
-        
-        <main class="p-[20px] mx-auto">
-          <nav class="relative">
-            <div class="absolute float-left right-0">
-              <h1 class="font-black">left</h1>
-            </div>
-            <div class="">
-              <div class="absolute float-right right-0"><img src="./image/doctor-blue.png" alt=""></div>
-            </div>
-          </nav>
+        </header>
+        <!-- End header  -->
 
+        <main class="">
+          <nav class="relative mx-auto h-[607px]">
+            <div class="relative">
+              <div class="absolute float-left left-20">
+                <h1 class="font-bold text-6xl ">
+                  Dịch vụ Tiêm chủng Vắc-xin
+                  <br>Bảo vệ bản thân, bảo vệ mọi người
+                </h1>
+                <p>
+                  Vắc-xin ra đời được coi là một trong những thành tựu vĩ đại của
+                  nhân loại. Nhờ có Vắc xin, hàng triệu người trên thế giới tránh
+                  được nguy cơ tử vong và những di chứng, dị tật suốt đời do các
+                  bệnh truyền nhiễm như sởi, quai bị, rubella, thủy đậu, uốn
+                  ván...
+                </p>
+                <div></div>
+              </div>
+            </div>
+            <div class="relative h-full">
+              <div
+                class="w-[976px] float-right right-0 bg-blue-600 bg-gradient-to-b from-[#4EBEFF] to-[#0679BB] rounded-bl-[30%]"
+              >
+                <div class="mt-[50px] float-right w-[685px] h-[557px]">
+                  <img src="./image/doctor-blue.png" alt="" srcset="" />
+                </div>
+                <div
+                  class="w-[272px] h-[103px] bg-[#FFFFFF] rounded-md absolute bottom-0 translate-y-[50%] ml-[36px]"
+                >
+                  <div
+                    class="w-[75px] h-[75px] mx-[14px] my-[14px] bg-gradient-to-b from-[#4EBEFF] to-[#0679BB] rounded-lg"
+                  >
+                    <div class="p-[16px]">
+                      <img src="./image/emergency.png" alt="" srcset="" />
+                    </div>
+                  </div>
+                  <div class="float-right">
+                    <div
+                      class="absolute top-[18px] translate-y-[0%] left-[50px] translate-x-[64%]"
+                    >
+                      <h1
+                        class="font-bold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-[#4EBEFF] to-[#0679BB]"
+                      >
+                        95%
+                      </h1>
+                      <span class="font-normal text-[16px]">Hiệu quả, an toàn</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
         </main>
         <!-- End main  -->
         <!-- <footer>footer</footer>End foorter  -->

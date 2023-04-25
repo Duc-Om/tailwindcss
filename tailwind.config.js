@@ -5,9 +5,6 @@ module.exports = {
   "./src/**/*.{js,jsx,ts,tsx,vue}"],
   theme: {
     extend: {
-      backgroundImage: {
-        'doctor': "url('./image/doctor-blue.png')",
-      },
       keyframes: {
         slideDown: {
           '0%': { transform: 'translateY(-100%)' },
