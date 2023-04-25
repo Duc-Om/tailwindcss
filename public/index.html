@@ -26,23 +26,21 @@
     <title>Template1</title>
   </head>
   <body>
-    <!-- container max-w-[1920px] max-h-[13882px] -->
     <div class="root">
       <div class="content-warraper max-w-[1920px] mx-auto text-base">
-
-        <header class="py-[20px] mx-[16px] h-[81px] bg-[#FFFFFF]">
-
-          <nav class="flex flex-row justify-between items-center">
-
-            <div class="logo basis-1/6 ml-[34px]">
+        <header class="p-[20px] mx-auto h-[81px] bg-[#FFFFFF]">
+          <nav class="flex flex-row justify-between items-center relative">
+            <!-- logo -->
+            <div class="logo basis-1/9 ml-[34px] mr-[30px]">
               <a href="#"><img src="./image/logo.png" alt="" srcset="" /></a>
             </div>
-
+            <!-- menu -->
             <ul
-              id="btn-menu-top" class="basis-5/6 hidden lg:flex lg:items-center lg:justify-center lg:gap-[32px] lg:text-base lg:font-bold"
+              id="btn-menu-top" class="basis-5/9 hidden lg:flex lg:items-center lg:justify-center lg:gap-[32px] lg:text-base lg:font-bold"
             >
               <li class="">
-                <a href="#" class="top-menu-item">Giới thiệu</a>
+                <!-- top-menu-item-active -->
+                <a href="#" class="top-menu-item ">Giới thiệu</a>
               </li>
               <li class="">
                 <a href="#" class="top-menu-item">Đối tượng khách hàng</a>
@@ -62,6 +60,16 @@
               <li class="cursor-pointer py-1">
                 <a href="#" class="top-menu-item">Hình ảnh & Video</a>
               </li>
+            </ul> <!-- End menu -->
+            <!-- responsive menu mobile-->
+            <div class="basis-1 lg:hidden flex items-center cursor-pointer">
+              <svg id="toggel-icon-menu-top" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
+              stroke="currentColor" class="w-6 h-6 absolute left-[250px]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </div>
+            <!-- buttom phone call -->
+            <ul class="basis-1/9 ml-[-35px]">
               <li>
                 <a href="tel:+19001806">
                   <div
@@ -82,18 +90,21 @@
                   </div>
                 </a>
               </li>
-            </ul> <!-- End header-menu -->
-            <!-- responsive menu -->
-
-            <div class="basis-1 lg:hidden flex items-center cursor-pointer">
-              <svg id="toggel-icon-menu-top" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" onclick="mobileMenu()"/>
-              </svg>
+            </ul><!-- End phone call  -->
+          </nav>
+        </header><!-- End header  -->
+        
+        <main class="p-[20px] mx-auto">
+          <nav class="relative">
+            <div class="absolute float-left right-0">
+              <h1 class="font-black">left</h1>
+            </div>
+            <div class="">
+              <div class="absolute float-right right-0"><img src="./image/doctor-blue.png" alt=""></div>
             </div>
           </nav>
-        </header>
-        <!-- End header  -->
-        <!-- <main>main</main> -->
+
+        </main>
         <!-- End main  -->
         <!-- <footer>footer</footer>End foorter  -->
       </div>
